@@ -1,0 +1,16 @@
+{
+  "source": "github",
+  "owner": "Zion-support",
+  "repo": "zion-cyber-ai",
+  "branch": "main",
+  "custom_domain": "cyber-ai.ziontechgroup.com",
+  "enforce_https": true,
+  "pages": {
+    "cname": "cyber-ai.ziontechgroup.com",
+    "build_type": "legacy",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    }
+  }
+}

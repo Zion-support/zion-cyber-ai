@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://cyber-ai.ziontechgroup.com/sitemap.xml

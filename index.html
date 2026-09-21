@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI-Powered Cybersecurity Operations | Zion Tech Group</title>
+<meta name="description" content="AI-powered SOC operations: threat detection, automated incident response, SOAR, vulnerability management, dark web monitoring, phishing detection, compliance automation.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://cyber-ai.ziontechgroup.com/">
+<link rel="alternate" hreflang="pt-BR" href="https://cyber-ai.ziontechgroup.com/pt/">
+<link rel="alternate" hreflang="en" href="https://cyber-ai.ziontechgroup.com/">
+<link rel="alternate" hreflang="es" href="https://cyber-ai.ziontechgroup.com/es/">
+<link rel="alternate" hreflang="fr" href="https://cyber-ai.ziontechgroup.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://cyber-ai.ziontechgroup.com/">
+<meta property="og:title" content="AI-Powered Cybersecurity Operations | Zion Tech Group">
+<meta property="og:description" content="AI-powered SOC operations for enterprise security teams.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyber-ai.ziontechgroup.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI-Powered Cybersecurity Operations | Zion Tech Group">
+<meta name="twitter:description" content="AI-powered SOC operations for enterprise security teams.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zion Tech Group",
+  "url": "https://ziontechgroup.com",
+  "description": "AI-powered cybersecurity operations and managed security services.",
+  "sameAs": ["https://cyber-ai.ziontechgroup.com"]
+}
+</script>
+<style>
+:root {
+  --bg: #0f172a;
+  --bg-alt: #1e293b;
+  --fg: #f8fafc;
+  --fg-muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --card: #1e293b;
+  --border: #334155;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.nav { background: var(--bg); padding: 16px 0; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+.navin { display: flex; justify-content: space-between; align-items: center; }
+.brand { font-weight: 700; font-size: 1.2rem; color: var(--fg); }
+.links { display: flex; align-items: center; gap: 24px; }
+.links a { color: var(--fg-muted); font-size: 0.95rem; }
+.links a:hover { color: var(--fg); text-decoration: none; }
+.links a[aria-current="true"] { color: var(--accent); }
+.cta {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.cta:hover { background: var(--accent-hover); }
+.menu { display: none; background: none; border: none; color: var(--fg); font-size: 1.5rem; cursor: pointer; }
+.langsw { display: flex; gap: 8px; font-size: 0.85rem; }
+.langsw a { color: var(--fg-muted); }
+.page { padding: 48px 0; }
+.hero { padding: 80px 0; text-align: center; }
+.hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; }
+.hero .lead { font-size: 1.2rem; color: var(--fg-muted); max-width: 700px; margin: 0 auto 32px; }
+.chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 24px 0; }
+.chip { background: var(--bg-alt); border: 1px solid var(--border); padding: 6px 14px; border-radius: 999px; font-size: 0.85rem; color: var(--fg-muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin: 32px 0; }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; transition: transform 0.2s, border-color 0.2s; }
+.card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.card h3 { font-size: 1.25rem; margin-bottom: 12px; }
+.card p { color: var(--fg-muted); margin-bottom: 16px; }
+.card.featured { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.price { font-size: 2rem; font-weight: 800; color: var(--fg); margin: 8px 0; }
+.price small { font-size: 0.9rem; font-weight: 400; color: var(--fg-muted); }
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn { background: var(--accent); color: #fff; }
+.btn:hover { background: var(--accent-hover); text-decoration: none; }
+.btn.alt { background: transparent; border: 1px solid var(--border); color: var(--fg); }
+.btn.alt:hover { border-color: var(--accent); color: var(--accent); }
+.btn.sm { padding: 8px 14px; font-size: 0.85rem; }
+.payrow { margin-top: 12px; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin: 24px 0; }
+.section { padding: 48px 0; }
+.section h2 { font-size: 2rem; margin-bottom: 16px; }
+.eyebrow { color: var(--accent); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+.crumb { color: var(--fg-muted); font-size: 0.85rem; margin-bottom: 16px; }
+.crumb a { color: var(--fg-muted); }
+.see-also { margin-top: 32px; text-align: center; color: var(--fg-muted); }
+.see-also a { margin: 0 4px; }
+.stat { text-align: center; padding: 24px; }
+.stat strong { display: block; font-size: 2rem; font-weight: 800; }
+.stat span { color: var(--fg-muted); font-size: 0.9rem; }
+.band { background: var(--bg-alt); padding: 48px 0; }
+.band .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+.faq details { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+.faq summary { font-weight: 600; cursor: pointer; }
+.faq details[open] summary { margin-bottom: 12px; }
+footer { background: var(--bg-alt); padding: 48px 0; border-top: 1px solid var(--border); margin-top: 48px; }
+.foot { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
+footer h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--fg-muted); margin-bottom: 12px; }
+footer a { display: block; color: var(--fg); margin-bottom: 8px; }
+footer a:hover { color: var(--accent); }
+.muted { color: var(--fg-muted); font-size: 0.85rem; text-align: center; margin-top: 24px; }
+.muted a { color: var(--fg-muted); margin: 0 4px; }
+@media (max-width: 768px) {
+  .links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg); padding: 24px; border-bottom: 1px solid var(--border); }
+  .links.open { display: flex; }
+  .menu { display: block; }
+  .hero h1 { font-size: 2rem; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="https://ziontechgroup.com">Zion Tech Group</a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<nav class="links" aria-label="Primary">
+<a href="/">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#blog">Blog</a>
+<a href="https://ziontechgroup.com/contact/">Contact</a>
+<a class="cta" href="https://buy.stripe.com/8x214o8NW35l5Xp3hm4ZG0b">Discovery $99</a>
+<span class="langsw" aria-label="Language"><a href="/pt/">PT</a><a href="/" aria-current="true">EN</a><a href="/es/">ES</a><a href="/fr/">FR</a></span>
+</nav></div></header>
+<main id="main">
+<section class="hero">
+<div class="wrap">
+<p class="eyebrow">AI-Powered Cybersecurity Operations</p>
+<h1>Security operations, amplified by AI.</h1>
+<p class="lead">Reduce mean time to detect (MTTD) and mean time to respond (MTTR) with AI-driven threat detection, automated incident response, and continuous compliance monitoring.</p>
+<div class="actions">
+<a class="btn" href="https://buy.stripe.com/8x214o8NW35l5Xp3hm4ZG0b">Pay Discovery $99 USD</a>
+<a class="btn alt" href="#pricing">See SOC+AI pricing</a>
+<a class="btn alt" href="https://ziontechgroup.com/en/plans/">All Zion plans</a>
+</div>
+<p class="chips" aria-label="Key capabilities">
+<span class="chip">AI Threat Detection</span>
+<span class="chip">Automated Incident Response</span>
+<span class="chip">SOAR</span>
+<span class="chip">SOC2 / ISO 27001 / HIPAA</span>
+</p>
+</div>
+</section>
+<section class="section" id="services"><div class="wrap">
+<p class="eyebrow">What we deliver</p>
+<h2>AI-native security operations.</h2>
+<p class="lead" style="color:var(--fg-muted);margin-bottom:32px">From detection to response to compliance — the full SOC pipeline, augmented by machine learning.</p>
+<div class="grid">
+<article class="card">
+<h3>AI Threat Detection</h3>
+<p>ML models trained on your environment to identify anomalies, lateral movement, and zero-day indicators that signature-based tools miss.</p>
+</article>
+<article class="card">
+<h3>Automated Incident Response</h3>
+<p>Playbooks that execute in seconds — isolate endpoints, revoke credentials, open tickets — while keeping humans in the loop for critical decisions.</p>
+</article>
+<article class="card featured">
+<h3>Security Orchestration (SOAR)</h3>
+<p>Unify your SIEM, EDR, ticketing, and threat intel feeds into a single AI-orchestrated pipeline. Reduce alert fatigue by 90%.</p>
+</article>
+<article class="card">
+<h3>Vulnerability Management AI</h3>
+<p>Continuous scanning, risk-prioritized patching, and predictive exploit modeling — know what to fix before the attackers do.</p>
+</article>
+<article class="card">
+<h3>Dark Web Monitoring</h3>
+<p>AI crawlers that monitor dark web marketplaces, forums, and paste sites for leaked credentials and corporate data.</p>
+</article>
+<article class="card">
+<h3>Phishing Detection</h3>
+<p>Real-time email and URL analysis using NLP and computer vision to catch spear-phishing and BEC attacks that bypass traditional filters.</p>
+</article>
+<article class="card">
+<h3>Compliance Automation</h3>
+<p>Continuous control monitoring for SOC 2, ISO 27001, HIPAA, and GDPR. Evidence collection, gap analysis, and audit-ready reports.</p>
+</article>
+</div>
+</div></section>
+<section class="band"><div class="wrap stats">
+<div class="stat"><strong>90%</strong><span>Alert noise reduction</span></div>
+<div class="stat"><strong>&lt;5min</strong><span>Mean time to respond</span></div>
+<div class="stat"><strong>24/7</strong><span>AI-powered monitoring</span></div>
+<div class="stat"><strong>SOC 2</strong><span>Audit-ready evidence</span></div>
+</div></section>
+<section class="section" id="pricing"><div class="wrap">
+<p class="eyebrow">Pricing</p>
+<h2>Transparent packages.</h2>
+<p class="lead" style="color:var(--fg-muted);margin-bottom:32px">Start with Discovery or go straight to the SOC+AI retainer. Invoices and wires available on request.</p>
+<div class="grid">
+<article class="card">
+<h3>Discovery</h3>
+<div class="price">$99</div>
+<ul class="features"><li>Security posture review</li><li>Gap analysis</li><li>30-min session</li></ul>
+<div class="payrow">
+<a class="btn" href="https://buy.stripe.com/8x214o8NW35l5Xp3hm4ZG0b" target="_blank" rel="noopener noreferrer">Pay $99 USD</a>
+</div>
+</article>
+<article class="card featured">
+<h3>SOC + AI</h3>
+<div class="price">$12,000 <small>/ month</small></div>
+<ul class="features"><li>AI-assisted alert triage</li><li>Tickets and runbook</li><li>Weekly executive report</li></ul>
+<div class="payrow">
+<a class="btn" href="https://buy.stripe.com/fZu9AUaW4cFV2Ld9FK4ZG0s" target="_blank" rel="noopener noreferrer">Subscribe $12,000/mo</a>
+</div>
+</article>
+<article class="card">
+<h3>Consulting</h3>
+<div class="price">$499</div>
+<ul class="features"><li>Security architecture review</li><li>Roadmap</li><li>3 sessions</li></ul>
+<div class="payrow">
+<a class="btn alt" href="https://buy.stripe.com/4gM14ofck0Xd1H94lq4ZG08" target="_blank" rel="noopener noreferrer">Pay $499 USD</a>
+</div>
+</article>
+</div>
+<div class="actions" style="margin-top:32px">
+<a class="btn alt" href="https://ziontechgroup.com/en/enterprise/">See all enterprise packages</a>
+</div>
+</div></section>
+<section class="section" id="blog"><div class="wrap">
+<p class="eyebrow">From the blog</p>
+<h2>AI & cybersecurity insights.</h2>
+<div class="grid">
+<article class="card">
+<h3>Why SOC Teams Are Ditching Signature-Based Detection</h3>
+<p>How ML models trained on your environment catch what rules-based SIEMs miss — and reduce alert fatigue by 90%.</p>
+<a class="btn alt sm" href="#">Read more</a>
+</article>
+<article class="card">
+<h3>SOC 2 Compliance in 2026: AI Automation Playbook</h3>
+<p>How to automate evidence collection, continuous monitoring, and gap analysis for faster, cheaper SOC 2 audits.</p>
+<a class="btn alt sm" href="#">Read more</a>
+</article>
+<article class="card">
+<h3>The State of AI-Driven Incident Response</h3>
+<p>Benchmark data on MTTD/MTTR improvements, false positive rates, and playbook automation coverage across 50+ SOCs.</p>
+<a class="btn alt sm" href="#">Read more</a>
+</article>
+</div>
+</div></section>
+<section class="section faq band"><div class="wrap">
+<h2>FAQ</h2>
+<details>
+<summary>How does AI improve threat detection?</summary>
+<p>ML models learn your environment's normal behavior and flag anomalies in real-time — catching zero-days and lateral movement that signature-based tools miss.</p>
+</details>
+<details>
+<summary>Can you replace our existing SIEM?</summary>
+<p>We augment rather than replace. AI layers on top of your existing SIEM/EDR stack to reduce noise and automate response.</p>
+</details>
+<details>
+<summary>What compliance frameworks do you support?</summary>
+<p>SOC 2, ISO 27001, HIPAA, GDPR, PCI DSS, and NIST CSF. Continuous control monitoring and audit-ready evidence collection for all.</p>
+</details>
+<details>
+<summary>How is pricing structured?</summary>
+<p>Discovery $99 for posture review. SOC+AI retainer at $12,000/month for ongoing operations. Custom scope after Discovery.</p>
+</details>
+</div></section>
+<p class="see-also">More from Zion: <a href="/apps/ai-governance/">AI Governance</a> · <a href="/apps/edge-ai/">Edge AI</a> · <a href="/apps/predictive-maintenance/">Predictive Maintenance</a> · <a href="https://ziontechgroup.com/en/plans/">All plans</a></p>
+</main>
+<footer><div class="wrap foot">
+<div><h3>Company</h3><a href="https://ziontechgroup.com/about/">About</a><a href="https://ziontechgroup.com/contact/">Contact</a></div>
+<div><h3>Offer</h3><a href="https://ziontechgroup.com/en/plans/">Plans</a><a href="https://ziontechgroup.com/en/enterprise/">Enterprise</a><a href="https://ziontechgroup.com/discovery/">Discovery $99</a></div>
+<div><h3>Resources</h3><a href="https://ziontechgroup.com/blog/">Blog</a><a href="#blog">Cyber Blog</a></div>
+<div><h3>Legal</h3><a href="https://ziontechgroup.com/privacy/">Privacy</a><a href="mailto:kleber@ziontechgroup.com">kleber@ziontechgroup.com</a></div>
+<p class="muted"><a href="https://ziontechgroup.com/">Português</a> · <a href="https://ziontechgroup.com/en/">English</a> · <a href="https://ziontechgroup.com/es/">Español</a> · <a href="https://ziontechgroup.com/fr/">Français</a></p>
+<p class="muted">Zion Tech Group · +1 302 464 0950 · 364 E Main St STE 1008, Middletown, DE 19709</p>
+</div></footer>
+</body>
+</html>
